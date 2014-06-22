@@ -1,0 +1,28 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+@Styles.Render("~/content/themes/base/css")
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="content">
+        <div id="navBar">
+            <ul class="mainMenu">
+                <li>Главная</li>
+                <li>Портфолио</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <div id="container">
+            @RenderBody()
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+</body>
+</html>
